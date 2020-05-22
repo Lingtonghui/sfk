@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>留言本</title>
+		<style>
+		.wrap{
+			width:600px;
+			margin:0px auto;
+		}
+		.add{overflow: hidden;}
+		.add .content{
+			width:598px;
+			margin:0;
+			padding:0;
+		}
+		.add .user{
+			float:left;
+		}
+		.add .btn{
+			float:right;
+		}
+
+		.msg{margin:20px 0px;background: #ccc;padding:5px;}
+		.msg .info{overflow: hidden;}
+		.msg .user{float:left;color:blue;}
+		.msg .time{float:right;color:#999;}
+		.msg .content{width:100%;}
+		</style>
+	</head>
+	<body>
+		<div class='wrap'>
+			<!-- 发表留言 -->
+			<div class='add'>
+			<form action="/save.php" method="post">
+				<textarea name='content' class='content' cols='50' rows='5'></textarea>
+				<input name='user' class='user' type='text' />
+				<input class='btn' type='submit' value='发表留言'/>
+			</form>
+			</div>
+
+			<!-- 查看留言 -->
+			<div class='msg'>
+				<div class='info'>
+					<span class='user'>用户名</span>
+					<span class='time'>2017-1-1 11:11:11</span>
+				</div>
+				<div class='content'>
+					我是留言内容。我是留言内容。我是留言内容。我是留言内容。
+				</div>
+			</div>
+			<div class='msg'>
+				<div class='info'>
+					<span class='user'>用户名</span>
+					<span class='time'>2017-1-1 11:11:11</span>
+				</div>
+				<div class='content'>
+					我是留言内容。我是留言内容。我是留言内容。我是留言内容。
+				</div>
+			</div>
+			<div class='msg'>
+				<div class='info'>
+					<span class='user'>用户名</span>
+					<span class='time'>2017-1-1 11:11:11</span>
+				</div>
+				<div class='content'>
+					我是留言内容。我是留言内容。我是留言内容。我是留言内容。
+				</div>
+			</div>						
+		</div>
+	</body>
+</html>
